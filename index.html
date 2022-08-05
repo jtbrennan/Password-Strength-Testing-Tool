@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PSW</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script src=script.js></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous">
+
+<div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                </div>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Strength</h1>
+                <br>
+                <span>Password Strength Tester</span>
+                <input type="password" placeholder="Password" id="inputId" onclick="reset1(); reset()"/>
+                <br>
+                <br>
+                <button type="button" onclick="clickTest()" onrelease="reset()">Test</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-right">
+                    <br>
+                    <p></p>
+                    <progress value="0" max="100" id="pbar" ></progress> 
+                    <b id="counting">0</b>
+                    <b id="cap_Hint">No Caps</b>
+                    <b id="num_Hint">No Numbers</b>
+                    <b id="specialC_Hint">No Special Char</b>
+                    <b id="eightChar_Hint">Less than 8 Characters</b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="footer">
+<b>	By: John Brennan </b>
+		<a href="https://github.com/jtbrennan" target="_blank" class="social"><i class="fab fa-github"></i></a>
+</div>
+</body>
+
+</html>
